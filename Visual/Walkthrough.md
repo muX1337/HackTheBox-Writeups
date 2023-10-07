@@ -1,4 +1,4 @@
-#Enumeration
+# Enumeration
 
 Nmap scan show open port on 80 which reveals a website. Check nmap-scan.html
 
@@ -7,12 +7,12 @@ Nmap scan show open port on 80 which reveals a website. Check nmap-scan.html
 The Website offers a service to build .net repos. We can exploit this by using some BuildEvents and getting a shell.
 
 ## Creating a Repo(must have a .sln file for .net)
-
+```
 dotnet new sln -o Visual
 cd Visual
 dotnet new console -o Visual.ConsoleApp --framework net6.0
 dotnet sln Visual.sln add Visual.ConsoleApp/Visual.ConsoleApp.csproj
-
+```
 HelloWorld.cs
 ```
 
