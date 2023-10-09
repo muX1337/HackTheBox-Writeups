@@ -21,7 +21,6 @@ echo '10.10.11.233 data.analytical.htb | sudo tee -a /etc/hosts'
 The Loginpage leads us to the Software Metabase. By google 'metabase exploit' one of the first links is about a Pre-Auth RCE. https://blog.assetnote.io/2023/07/22/pre-auth-rce-metabase/
 
 This article explains it in detail. By searching for the setup-token at the sourcecode of the login-pages it is verified this works. 
-Using Metasploit is the easiest ways in.
 
 ## Using Metasploit to gain access
 
