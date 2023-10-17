@@ -7,13 +7,20 @@ Filtered Port: 3000
 echo "10.10.11.235 drive.htb" | sudo tee -a /etc/hosts
 ```
 
+<<<<<<< HEAD
 # Foothold
 
+=======
+>>>>>>> 07617953e2b03e9348c9a5d540f632fdb94b63c1
 ## Path Traversal
 
 The file http://drive.htb/100/getFileDetail/ is also available under http://drive.htb/100/block/ 
 
 Iteration reveals ssh username and password in a document.
+<<<<<<< HEAD
+=======
+http://drive.htb/79/block/ 
+>>>>>>> 07617953e2b03e9348c9a5d540f632fdb94b63c1
 
 ## Gitea ssh-portforwarding
 
@@ -27,6 +34,7 @@ Use the same password for the username martinCruz.
 
 Password for the backups can be found in the script.
 
+<<<<<<< HEAD
 ## Password cracking
 
 Cracking some Sha1
@@ -91,5 +99,7 @@ Get root shell
 ```
 /tmp/b -p
 ```
+=======
+>>>>>>> 07617953e2b03e9348c9a5d540f632fdb94b63c1
 
 
