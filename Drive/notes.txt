@@ -1,0 +1,22 @@
+walkthought chinese
+https://blog.csdn.net/m0_56308852/article/details/133850975
+
+### ssh
+username: 
+martin
+password:
+Xk4@KjyrYv8t194L!
+
+### gitea
+username:
+martinCruz
+password:
+Xk4@KjyrYv8t194L!
+
+### Backup-Password
+H@ckThisP@ssW0rDIfY0uC@n:)
+
+Tomshash
+sha1$Ri2bP6RVoZD5XYGzeYWr7c$71eb1093e10d8f7f4d1eb64fa604e6050f8ad141:johniscool
+sha1$DhWa3Bym5bj9Ig73wYZRls$3ecc0c96b090dea7dfa0684b9a1521349170fc93:john boy
+sha1$Ri2bP6RVoZD5XYGzeYWr7c$4053cb928103b6a9798b2521c4100db88969525a:johnmayer7
