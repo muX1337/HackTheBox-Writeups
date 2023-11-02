@@ -20,11 +20,11 @@ echo '10.10.11.238 meddigi.htb' | sudo tee -a /etc/hosts
 
 ## VHOST Enumeration
 
-'''
+```
 gobuster vhost -u https://meddigi.htb -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt --append-domain -t 40 -k
 
 Found: portal.meddigi.htb Status: 200 [Size: 2976]
-'''
+```
 
 ## Adding new vhost
 
