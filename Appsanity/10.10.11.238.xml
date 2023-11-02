@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Sat Oct 28 21:01:21 2023 as: nmap -&#45;vv -sS -sCV -p- -&#45;min-rate 5000 -oX 10.10.11.238.xml 10.10.11.238 -->
+<nmaprun scanner="nmap" args="nmap -&#45;vv -sS -sCV -p- -&#45;min-rate 5000 -oX 10.10.11.238.xml 10.10.11.238" start="1698519681" startstr="Sat Oct 28 21:01:21 2023" version="7.94" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1698519681"/>
+<taskend task="NSE" time="1698519681"/>
+<taskbegin task="NSE" time="1698519681"/>
+<taskend task="NSE" time="1698519681"/>
+<taskbegin task="NSE" time="1698519681"/>
+<taskend task="NSE" time="1698519681"/>
+<taskbegin task="Ping Scan" time="1698519681"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.238" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1698519681" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1698519681"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1698519682"/>
+<taskbegin task="SYN Stealth Scan" time="1698519682"/>
+<taskend task="SYN Stealth Scan" time="1698519709" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1698519709"/>
+<taskend task="Service scan" time="1698519751" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1698519751"/>
+<taskend task="NSE" time="1698519756"/>
+<taskbegin task="NSE" time="1698519756"/>
+<taskend task="NSE" time="1698519757"/>
+<taskbegin task="NSE" time="1698519757"/>
+<taskend task="NSE" time="1698519757"/>
+<host starttime="1698519682" endtime="1698519757"><status state="up" reason="syn-ack" reason_ttl="127"/>
+<address addr="10.10.11.238" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-response" count="65532" proto="tcp" ports="1-79,81-442,444-7679,7681-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-title" output="Did not follow redirect to https://meddigi.htb/"><elem key="redirect_url">https://meddigi.htb/</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7680"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="pando-pub" method="table" conf="3"/></port>
+</ports>
+<times srtt="30620" rttvar="4724" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1698519757"/>
+<taskend task="NSE" time="1698519757"/>
+<taskbegin task="NSE" time="1698519757"/>
+<taskend task="NSE" time="1698519757"/>
+<taskbegin task="NSE" time="1698519757"/>
+<taskend task="NSE" time="1698519757"/>
+<runstats><finished time="1698519757" timestr="Sat Oct 28 21:02:37 2023" summary="Nmap done at Sat Oct 28 21:02:37 2023; 1 IP address (1 host up) scanned in 75.92 seconds" elapsed="75.92" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
