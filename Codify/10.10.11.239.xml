@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Sat Nov  4 21:04:03 2023 as: nmap -&#45;vv -sS -sCV -p- -&#45;min-rate 5000 -oX 10.10.11.239.xml 10.10.11.239 -->
+<nmaprun scanner="nmap" args="nmap -&#45;vv -sS -sCV -p- -&#45;min-rate 5000 -oX 10.10.11.239.xml 10.10.11.239" start="1699128243" startstr="Sat Nov  4 21:04:03 2023" version="7.94" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1699128243"/>
+<taskend task="NSE" time="1699128243"/>
+<taskbegin task="NSE" time="1699128243"/>
+<taskend task="NSE" time="1699128243"/>
+<taskbegin task="NSE" time="1699128243"/>
+<taskend task="NSE" time="1699128243"/>
+<taskbegin task="Ping Scan" time="1699128243"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.239" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1699128243" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1699128243"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1699128244"/>
+<taskbegin task="SYN Stealth Scan" time="1699128244"/>
+<taskend task="SYN Stealth Scan" time="1699128259" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1699128260"/>
+<taskend task="Service scan" time="1699128271" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1699128271"/>
+<taskend task="NSE" time="1699128278"/>
+<taskbegin task="NSE" time="1699128278"/>
+<taskend task="NSE" time="1699128278"/>
+<taskbegin task="NSE" time="1699128278"/>
+<taskend task="NSE" time="1699128278"/>
+<host starttime="1699128244" endtime="1699128278"><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="10.10.11.239" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="reset" count="65532" proto="tcp" ports="1-21,23-79,81-2999,3001-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="8.9p1 Ubuntu 3ubuntu0.4" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  256 96:07:1c:c6:77:3e:07:a0:cc:6f:24:19:74:4d:57:0b (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN+/g3FqMmVlkT3XCSMH/JtvGJDW3+PBxqJ+pURQey6GMjs7abbrEOCcVugczanWj1WNU5jsaYzlkCEZHlsHLvk=&#xa;  256 0b:a4:c0:cf:e2:3b:95:ae:f6:f5:df:7d:0c:88:d6:ce (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIm6HJTYy2teiiP6uZoSCHhsWHN+z3SVL/21fy6cZWZi"><table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN+/g3FqMmVlkT3XCSMH/JtvGJDW3+PBxqJ+pURQey6GMjs7abbrEOCcVugczanWj1WNU5jsaYzlkCEZHlsHLvk=</elem>
+<elem key="fingerprint">96071cc6773e07a0cc6f2419744d570b</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIIm6HJTYy2teiiP6uZoSCHhsWHN+z3SVL/21fy6cZWZi</elem>
+<elem key="fingerprint">0ba4c0cfe23b95aef6f5df7d0c88d6ce</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.52" hostname="codify.htb" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.52</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to http://codify.htb/"><elem key="redirect_url">http://codify.htb/</elem>
+</script><script id="http-server-header" output="Apache/2.4.52 (Ubuntu)"><elem>Apache/2.4.52 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="3000"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Node.js Express framework" method="probed" conf="10"><cpe>cpe:/a:nodejs:node.js</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Codify"><elem key="title">Codify</elem>
+</script></port>
+</ports>
+<times srtt="27628" rttvar="743" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1699128278"/>
+<taskend task="NSE" time="1699128278"/>
+<taskbegin task="NSE" time="1699128278"/>
+<taskend task="NSE" time="1699128278"/>
+<taskbegin task="NSE" time="1699128278"/>
+<taskend task="NSE" time="1699128278"/>
+<runstats><finished time="1699128278" timestr="Sat Nov  4 21:04:38 2023" summary="Nmap done at Sat Nov  4 21:04:38 2023; 1 IP address (1 host up) scanned in 35.31 seconds" elapsed="35.31" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
