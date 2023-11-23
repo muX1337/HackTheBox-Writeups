@@ -1,7 +1,7 @@
  Machine Hospital
 
 # Enumeration
-
+```
 ❯ rustscan --ulimit=5000 --range=1-65535 -a 10.10.11.241 -- -A -sC
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
 | {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
@@ -140,6 +140,7 @@ Host script results:
 |   3:1:1:
 |_    Message signing enabled and required
 |_clock-skew: mean: 6h59m59s, deviation: 0s, median: 6h59m59s
+```
 
 ## Adding domain to Host
 ```
