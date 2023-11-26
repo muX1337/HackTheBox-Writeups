@@ -138,3 +138,20 @@ Using webshell at following url:
 http://dev.devvortex.htb/templates/cassiopeia/error.php
 ```
 
+Rest might come the next days, after some ppl like to change passes/hashes makes it harder for the rest of us. 
+
+Here just in short form
+
+1. get hashes from mysql, crack it and you got the userflag
+```
+logan | $2y$10$IT4k5kmSGvHSO9d6M/1w0eYiB5Ne9XzArQRFJTGThNiy/yBtkIj12:tequieromucho
+```
+2. check out sudo -l permission
+3. Run the command allowed as sudo
+```
+sudo apport-cli -c /bin/mysql less
+```
+That's so far the fastest way instead of less you can take any other command or just use the -f argument and create one by yourself wait till it fails to send and view the rerport.
+The important step is to view a report and get the pager which is default less where you can just type commands.
+4. type !sh and you got a root shell.
+
