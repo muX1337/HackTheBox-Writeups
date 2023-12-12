@@ -309,7 +309,7 @@ Creating backup to /tmp/zm/zm-1.dump. This may take several minutes.
 
 ```
 
-And he the already started listener
+And here the already started listener
 ```
 nc -nlvp 1337
 listening on [any] 1337 ...
