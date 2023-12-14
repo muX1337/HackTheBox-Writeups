@@ -176,7 +176,7 @@ Matching Modules
    
 ... ... ...
 
-use exploit/unix/webapp/zoneminder_snapshots
+use exploit/unix/webapp/zoneminder_snapshots
 options
 
 Module options (exploit/unix/webapp/zoneminder_snapshots):
